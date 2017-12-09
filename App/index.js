@@ -6,16 +6,9 @@
 
 
 import React, { Component } from 'react'
-import { AsyncStorage } from 'react-native'
-import { createStore, applyMiddleware } from 'redux'
+import { View, StatusBar, StyleSheet } from 'react-native'
 import { Provider } from 'react-redux'
-import Immutable from 'immutable'
-import { combineReducers } from 'redux-immutablejs'
-import thunk from 'redux-thunk'
-import { composeWithDevTools } from 'redux-devtools-extension'
-import { persistStore, autoRehydrate } from 'redux-persist-immutable'
 import AppWithNavigationState from './Navigation/AppNavigation'
-import reducers from './Reducers'
 import configureStore from './ConfigrueStore'
 
 export default class App extends Component {
@@ -33,7 +26,18 @@ export default class App extends Component {
     return isLoading
       ? null
       : <Provider store={store}>
-        <AppWithNavigationState />
+        <View style={styles.container}>
+          <StatusBar
+            barStyle="light-content"
+          />
+          <AppWithNavigationState />
+        </View>
       </Provider>
   }
 }
+
+let styles = StyleSheet.create({
+  container: {
+    flex: 1
+  }
+})

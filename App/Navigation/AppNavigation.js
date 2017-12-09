@@ -6,6 +6,8 @@ import { addNavigationHelpers, StackNavigator, TabNavigator } from 'react-naviga
 
 import Home from '../Views/Home'
 import Login from '../Views/Login'
+import List from '../Views/List'
+import Profile from '../Views/Profile'
 
 const styles = StyleSheet.create({
   header: {
@@ -41,9 +43,9 @@ const styles = StyleSheet.create({
 })
 
 const tabs = {
-  Home: {
-    screen: Home,
-  }
+  Home: { screen: Home },
+  List: { screen: List },
+  Profile: {screen: Profile}
 }
 
 const tabsConfig = {
@@ -105,8 +107,6 @@ export default class AppWithNavigationState extends Component {
   }
 
   render() {
-    console.log('render AppWithNavigationState')
-
     const { dispatch, nav } = this.props
     return <AppNavigator navigation={addNavigationHelpers({ dispatch, state: nav })} />
   }

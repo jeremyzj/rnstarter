@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { StyleSheet, Platform, BackHandler } from 'react-native'
+import { StyleSheet, Platform, BackHandler, View } from 'react-native'
 import { connect } from 'react-redux'
 import { addNavigationHelpers, StackNavigator, TabNavigator } from 'react-navigation'
 
@@ -8,8 +8,12 @@ import Home from '../Views/Home'
 import Login from '../Views/Login'
 import List from '../Views/List'
 import Profile from '../Views/Profile'
+import Loading from '../Components/Loading'
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
   header: {
     backgroundColor: '#3F3F3F'
   },
@@ -83,7 +87,8 @@ const stackConfig = {
 export const AppNavigator = StackNavigator(routes, stackConfig)
 
 const mapStateToProps = state => ({
-  nav: state.get('nav')
+  nav: state.get('nav'),
+  isLoadingShow: state.getIn(['loading','isLoadingShow'])
 })
 
 @connect(mapStateToProps)
@@ -108,6 +113,11 @@ export default class AppWithNavigationState extends Component {
 
   render() {
     const { dispatch, nav } = this.props
-    return <AppNavigator navigation={addNavigationHelpers({ dispatch, state: nav })} />
+    return (
+      <View style={styles.container}>
+        <AppNavigator navigation={addNavigationHelpers({ dispatch, state: nav })} />
+        <Loading isVisible={this.props.isLoadingShow}/>
+      </View>
+    )
   }
 }

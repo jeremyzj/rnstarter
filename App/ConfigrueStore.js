@@ -21,6 +21,6 @@ export default (onCompletion) => {
     composeWithDevTools(applyMiddleware(...middleware), autoRehydrate())
   )
 
-  persistStore(store, { storage: AsyncStorage }, onCompletion)
+  persistStore(store, { storage: AsyncStorage, whitelist: ['loginInfo'] }, onCompletion)
   return store
 }

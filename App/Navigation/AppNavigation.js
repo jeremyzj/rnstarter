@@ -9,32 +9,34 @@ import Login from '../Views/Login'
 import List from '../Views/List'
 import Profile from '../Views/Profile'
 import Loading from '../Components/Loading'
+import { AppColors, AppSizes } from '../Theme'
 
+const {rem} = AppSizes
 const styles = StyleSheet.create({
   container: {
     flex: 1
   },
   header: {
-    backgroundColor: '#3F3F3F'
+    backgroundColor: AppColors.brand.primary
   },
   headerTitle: {
     color: '#FFF',
-    fontSize: 17,
+    fontSize: 17 * rem,
     textAlign: 'center',
   },
   tabBar: {
     borderTopWidth: 0,
     backgroundColor: '#FFF',
-    height: 49,
+    height: 49 * rem,
   },
   labelStyle: {
-    fontSize: 10,
-    marginBottom: 5,
+    fontSize: 10 * rem,
+    marginBottom: 5 * rem,
     color: '#888',
     ...Platform.select({
       ios: {},
       android: {
-        marginTop: 2,
+        marginTop: 2 * rem,
       },
     })
   },

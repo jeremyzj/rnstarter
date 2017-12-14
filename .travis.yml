@@ -4,5 +4,3 @@ before_script:
   - npm test
 node_js:
   - "8.8.1"
-script :
-  - fastlane to_pgy

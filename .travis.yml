@@ -1,3 +1,4 @@
+language: javascript
 before_script:
   - npm install
   - npm test

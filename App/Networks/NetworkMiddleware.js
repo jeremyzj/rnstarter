@@ -3,7 +3,6 @@ import request from './index'
 import {actionTypes} from './NetworkConfig'
 
 const NetworkMiddleware = store => next => action => {
-  console.log('dispatching', action)
   const { requestType } = action
   let actionValues = Object.values(actionTypes)
   let actionKeys = Object.keys(actionTypes)

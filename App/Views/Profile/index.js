@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import {View, Text, Button, Image, StyleSheet} from 'react-native'
-import ProfileFocusImg from '../../Images/profile_focus.png'
-import ProfileNormalImg from '../../Images/profile_normal.png'
+import {ProfileFocusImg , ProfileNormalImg} from '../../Images'
 import { connect } from 'react-redux'
 
 const mapStateToProps = () => ({

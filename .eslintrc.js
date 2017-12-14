@@ -38,6 +38,10 @@ module.exports = {
       "setTimeout": true,
       "setImmediate": true,
       "alert": true,
+      "test": true,
+      "expect": true,
+      "describe": true,
+      "it": true
     },
     "parser": "babel-eslint"
   };

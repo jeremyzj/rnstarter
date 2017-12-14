@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import {View, Text, Image} from 'react-native'
-import ListFocusImg from '../../Images/list_focus.png'
-import ListNormalImg from '../../Images/list_normal.png'
+import {ListFocusImg , ListNormalImg} from '../../Images'
 
 export default class List extends Component {
 

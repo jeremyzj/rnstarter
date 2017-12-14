@@ -1,0 +1,7 @@
+app_identifier "com.ipampas.hzqianniu" # The bundle identifier of your app
+apple_id "ios-dev@ipampas.com" # Your Apple email address
+
+team_id "DQ5JFHVHX2" # Developer Portal Team ID
+
+# you can even provide different app identifiers, Apple IDs and team names per lane:
+# More information: https://docs.fastlane.tools/advanced/#appfile

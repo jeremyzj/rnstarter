@@ -1,0 +1,12 @@
+before_script:
+  - npm install
+  - npm test
+
+stages:
+  - build
+ 
+# iOS job build上传fir.im
+fastlane_to_firim:
+  stage : build
+  script :
+    - fastlane to_pgy

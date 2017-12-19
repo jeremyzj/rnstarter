@@ -34,7 +34,7 @@ platform :ios do
     gym(
       scheme: 'rnstarter',
       project: './ios/rnstarter.xcodeproj',
-      output_directory: './pgyer',
+      output_directory: './fastlane/pgyer',
       export_options: {
         method: "ad-hoc", # 这可以不指定
         thinning: "<none>"

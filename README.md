@@ -4,15 +4,21 @@
 
 **1.2 React :** 起源于 Facebook 的内部项目, 因为该公司对市场上所有 JavaScript MVC 框架，都不满意，就决定自己写一套，用来架设 Instagram 的网站。做出来以后，发现这套东西很好用，在2013年5月开源. 由于 React 的设计思想极其独特，属于革命性创新，性能出众，代码逻辑却非常简单。所以，越来越多的人开始关注和使用，认为它可能是将来 Web 开发的主流工具;
 
+RN是基于react的框架，整体开发思路也和react 基本一致
+
 **1.3 [flex 布局](https://reactnative.cn/docs/0.51/layout-with-flexbox.html#content) :**  网页应用的主流布局方式;
 
-**[ReactNative](https://reactnative.cn/) :** facebook开发的跨平台工具，基于React，结果一天之内，就获得了 5000 颗星，受瞩目程度可见一斑， 截止到文章日期5.6K星;
+**1.4 [ReactNative](https://reactnative.cn/) :** facebook开发的跨平台工具，基于React，结果一天之内，就获得了 5000 颗星，受瞩目程度可见一斑， 截止到文章日期5.6K星;
 
-**1.4 Node.js & npm & Yarn :** 了解基础 & 使用
+**1.5 Node.js & npm & Yarn :** 了解基础 & 使用
 
-**1.5 [redux](http://cn.redux.js.org/index.html) :** JS 状态容器，实现view & state 分离，开发体验超爽， 而且体小精悍(只有2K)
+node.js RN的调试服务就是node服务器	  
+npm js包管理工具.  
+Yarn 是Facebook提供的替代npm的工具，可以加速node模块的下载。React Native的命令行工具用于执行创建、初始化、更新项目、运行打包服务（packager）等任务。
 
-**1.6 [immutable.js](https://facebook.github.io/immutable-js/) :**  
+**1.6 [redux](http://cn.redux.js.org/index.html) :** JS 状态容器，实现view & state 分离，开发体验超爽， 而且体小精悍(只有2K)
+
+**1.7 [immutable.js](https://facebook.github.io/immutable-js/) :**  
 [Pete Hunt](https://github.com/petehunt): Shared mutable state is the root of all evil（共享的可变状态是万恶之源）, 有人说 Immutable 可以给 React 应用带来数十倍的提升，也有人说 Immutable 的引入是近期 JavaScript 中伟大的发明, Facebook 工程师 Lee Byron 花费 3 年时间打造，与 React 同期出现。    
 [Immutable 详解及 React 中实践](https://github.com/camsong/blog/issues/3)
 
@@ -97,7 +103,16 @@ React Native一个重要功能，支持热更新，苹果去年有过一次对�
 
 有条件的单位可以自己建热修复服务，下载bundle包
 
-### 2.13 [丰富的组件库](https://react.parts/?collection=React+Native)
+### 2.13 native组件开发：
+
+React Native可能还没有相应的模块封装，但是提供native组件开发能力.
+
+[iOS原生模块](https://reactnative.cn/docs/0.51/native-modules-ios.html#content)    
+[iOS原生UI组件](https://reactnative.cn/docs/0.51/native-component-ios.html#content)    
+[安卓原生模块](https://reactnative.cn/docs/0.51/native-modules-android.html#content) 	    
+[安卓原生UI组件](https://reactnative.cn/docs/0.51/native-component-android.html#content)
+
+### 2.14 [丰富的组件库](https://react.parts/?collection=React+Native)
 
 ## 3. [rnstart](https://github.com/jeremyzj/rnstarter)是针对上面总结的RN starter demo工程
 

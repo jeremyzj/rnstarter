@@ -92,7 +92,7 @@ Redux 由 Flux 演变而来，但受 Elm 的启发，避开了 Flux 的复杂性
 
 toast 和 loading对于APP交互时一个重要体验，不要让用户以为你死机了 
 
-[toast](https://github.com/crazycodeboy/react-native-easy-toast)  	    	
+[toast](https://github.com/crazycodeboy/react-native-easy-toast) 组件     	    	
 [react-native-spinkit](https://github.com/maxs15/react-native-spinkit) 集成了很多loading动画
 
 ### 2.12 热更新： 

@@ -1,5 +1,3 @@
-# react-native 技术栈 & 开发链路总结
-
 ## 1. 技术栈
 
 **1.1 javascript - [ECMAScript6](http://es6.ruanyifeng.com/#docs/object) :** 语言工具; 
@@ -88,7 +86,7 @@ Redux 由 Flux 演变而来，但受 Elm 的启发，避开了 Flux 的复杂性
 
 toast 和 loading对于APP交互时一个重要体验，不要让用户以为你死机了 
 
-[toast](https://github.com/crazycodeboy/react-native-easy-toast)	
+[toast](https://github.com/crazycodeboy/react-native-easy-toast)  	    	
 [react-native-spinkit](https://github.com/maxs15/react-native-spinkit) 集成了很多loading动画
 
 ### 2.12 热更新： 
@@ -101,7 +99,9 @@ React Native一个重要功能，支持热更新，苹果去年有过一次对�
 
 ### 2.13 [丰富的组件库](https://react.parts/?collection=React+Native)
 
-### 3. [rnstart](https://github.com/jeremyzj/rnstarter)针对上面总结的RN starter demo工程
+## 3. [rnstart](https://github.com/jeremyzj/rnstarter)是针对上面总结的RN starter demo工程
+
+
 
 
 

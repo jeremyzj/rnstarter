@@ -119,6 +119,7 @@ React Native可能还没有相应的模块封装，但是提供native组件开�
 ### 3.1 目录结构
 
 ```
+
  |-- rnstarter
     |-- __tests__    				//单测文件目录
     |-- android						//安卓平台    
@@ -148,6 +149,7 @@ React Native可能还没有相应的模块封装，但是提供native组件开�
         |-- ConfigureStore.js			//redux store配置
         |-- index.js				//入口文件
         |-- Reducers.js				//reducers
+        
 ```
 
 
@@ -155,6 +157,7 @@ React Native可能还没有相应的模块封装，但是提供native组件开�
 ### 3.2 安装
 
 ```
+
 git clone https://github.com/jeremyzj/rnstarter
 cd rnstarter & npm install
 
@@ -165,7 +168,9 @@ cd rnstarter & npm install
 ### 3.3 运行
 
 ```
+
 react-native run-ios //或者react-native run-andriod
+
 ```
 
 

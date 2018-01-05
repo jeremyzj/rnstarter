@@ -101,7 +101,57 @@ React Native一个重要功能，支持热更新，苹果去年有过一次对�
 
 ## 3. [rnstart](https://github.com/jeremyzj/rnstarter)是针对上面总结的RN starter demo工程
 
+### 3.1 目录结构
 
+```
+ |-- rnstarter
+    |-- __tests__    				//单测文件目录
+    |-- android						//安卓平台    
+    |-- ios							//iOS平台
+    |-- README.md
+    |-- fastlane				   	//fastlane iOS打包工具
+    |-- package.json
+    |-- .babelrc		
+    |-- .eslintrc.js				//eslint配置文件
+    |-- .gitignore
+    |-- .travis.yml					//travis ci 配置文件
+    |-- index.js					//APP 入口文件
+    |-- App
+        |-- Component				//无状态组件
+        |-- Image					//图片资源
+        |-- Modules					//业务状态模块，管理redux的actions, reducer
+        |-- Navigation				//转场, route管理
+        |-- Network					//网络
+        |-- Middleware				//redux 中间件
+        |-- Theme					//全局主题管理
+        	  |-- colors.js
+        	  |-- Fonts.js
+        	  |-- index.js
+        	  |-- Sizes.js
+        	  |-- Styles.js
+        |-- Util						//工具类
+        |-- ConfigureStore.js			//redux store配置
+        |-- index.js				//入口文件
+        |-- Reducers.js				//reducers
+```
+
+
+
+### 3.2 安装
+
+```
+git clone https://github.com/jeremyzj/rnstarter
+cd rnstarter & npm install
+
+```
+
+建议先安装react-native-debugger 体验效果会更好
+
+### 3.3 运行
+
+```
+react-native run-ios //或者react-native run-andriod
+```
 
 
 

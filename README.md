@@ -81,7 +81,7 @@ Redux 由 Flux 演变而来，但受 Elm 的启发，避开了 Flux 的复杂性
 ### 2.9 网络：    
 
 [fetch](https://reactnative.cn/docs/0.51/network.html#content)  
-[更好数据传输工具](https://github.com/wkh237/react-native-fetch-blob)
+[react-native-fetch-blob](https://github.com/wkh237/react-native-fetch-blob)更好数据传输工具
 
 ### 2.10 存储： 
 

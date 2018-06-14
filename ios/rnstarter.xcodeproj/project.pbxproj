@@ -1282,13 +1282,14 @@
 					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
 				);
 				INFOPLIST_FILE = rnstarter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ipampas.hzqianniu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipampas.rnstart;
 				PRODUCT_NAME = rnstarter;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1306,13 +1307,14 @@
 					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
 				);
 				INFOPLIST_FILE = rnstarter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ipampas.hzqianniu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipampas.rnstart;
 				PRODUCT_NAME = rnstarter;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

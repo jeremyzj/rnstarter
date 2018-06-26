@@ -3,7 +3,9 @@ import { View, StatusBar, StyleSheet } from 'react-native'
 import { Provider } from 'react-redux'
 import AppWithNavigationState from './Navigation/AppNavigation'
 import configureStore from './ConfigrueStore'
+import codePush from 'react-native-code-push'
 
+@codePush
 export default class App extends Component {
   constructor() {
     super()

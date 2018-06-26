@@ -22,6 +22,8 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.0.0.0</string>
+	<key>CodePushDeploymentKey</key>
+	<string>vl2K9mDelJ1XuB3eBYRvxKNid4LW4619a06a-47ab-4a6f-a3b6-7acb423467c6</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>

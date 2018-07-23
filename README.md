@@ -34,7 +34,7 @@ react-native [环境安装](https://reactnative.cn/docs/0.51/getting-started.htm
 RN 调试工具：[react-native-debugger](https://github.com/jhen0409/react-native-debugger)   
 redux 开发扩展插件：[redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension)
 
-![](./img/debuger.png)
+![](./imgs/debuger.png)
 
 ### 2.3 eslint 
 

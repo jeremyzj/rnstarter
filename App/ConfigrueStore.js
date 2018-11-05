@@ -6,12 +6,13 @@ import Immutable from 'immutable'
 import { combineReducers } from 'redux-immutablejs'
 import { persistStore, autoRehydrate } from 'redux-persist-immutable'
 import NetworkMiddleware from './Networks/NetworkMiddleware'
-
 import reducers from './Reducers'
+import { middlewareNav} from './Navigation/Reducer'
 
 export default (onCompletion) => {
   const middleware = [thunk]
   middleware.push(NetworkMiddleware)
+  middleware.push(middlewareNav)
   const initialState = Immutable.Map()
   const reducer = combineReducers(reducers)
 

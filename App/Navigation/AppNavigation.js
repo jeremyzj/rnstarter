@@ -1,15 +1,12 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { StyleSheet, Platform, BackHandler, View } from 'react-native'
+import { StyleSheet, Platform} from 'react-native'
 import { connect } from 'react-redux'
-import { addNavigationHelpers, StackNavigator, TabNavigator } from 'react-navigation'
-
+import { StackNavigator, TabNavigator } from 'react-navigation'
 import Home from '../Views/Home'
 import Login from '../Views/Login'
 import List from '../Views/List'
 import Profile from '../Views/Profile'
-import Loading from '../Components/Loading'
 import { AppColors, AppSizes } from '../Theme'
+import { reduxifyNavigator, createReactNavigationReduxMiddleware } from 'react-navigation-redux-helpers'
 
 const {rem} = AppSizes
 const styles = StyleSheet.create({
@@ -88,38 +85,14 @@ const stackConfig = {
 
 export const AppNavigator = StackNavigator(routes, stackConfig)
 
-const mapStateToProps = state => ({
-  nav: state.get('nav'),
-  isLoadingShow: state.getIn(['loading','isLoadingShow'])
+export const middlewareNav = createReactNavigationReduxMiddleware(
+  'root',
+  state => state.nav,
+)
+
+const App = reduxifyNavigator(AppNavigator, 'root')
+const mapStateToProps = (state) => ({
+  state: state.get('nav')
 })
+export default connect(mapStateToProps)(App)
 
-@connect(mapStateToProps)
-export default class AppWithNavigationState extends Component {
-  static propTypes = {
-    dispatch: PropTypes.func.isRequired,
-    nav: PropTypes.object.isRequired,
-  }
-
-  componentDidMount() {
-    const { dispatch, nav } = this.props
-
-    BackHandler.addEventListener('hardwareBackPress', () => {
-      if (nav.routes.length === 1) {
-        return false
-      }
-
-      dispatch({ type: 'Navigation/BACK' })
-      return true
-    })
-  }
-
-  render() {
-    const { dispatch, nav } = this.props
-    return (
-      <View style={styles.container}>
-        <AppNavigator navigation={addNavigationHelpers({ dispatch, state: nav })} />
-        <Loading isVisible={this.props.isLoadingShow}/>
-      </View>
-    )
-  }
-}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { View, StatusBar, StyleSheet } from 'react-native'
 import { Provider } from 'react-redux'
-import AppWithNavigationState from './Navigation/AppNavigation'
+import { AppNavigator } from './Navigation/AppNavigation'
 import configureStore from './ConfigrueStore'
 import codePush from 'react-native-code-push'
 
@@ -25,7 +25,7 @@ export default class App extends Component {
           <StatusBar
             barStyle="light-content"
           />
-          <AppWithNavigationState />
+          <AppNavigator/>
         </View>
       </Provider>
   }
